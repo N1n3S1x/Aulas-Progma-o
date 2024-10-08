@@ -1,0 +1,53 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int numero;
+    
+    numero = 7;
+    
+    if ( numero == 5 /* Condição */ ){
+        
+        printf("o numero é igual a 5");
+            // código
+        
+    }   else if ( numero == 7  /* Condição Secundária */ ){
+        
+        printf("o numero é igual a 7");
+        
+            // código
+        
+    }   else if ( numero == 9){
+        
+        printf("O numero é igual a 9");
+        
+    }   else {
+        
+        printf("o numero é diferente de 7,5 e 9");
+            // código
+    }
+    
+    
+    switch (numero) {
+        
+    case 5:
+    
+        printf("o numero é igual a 5");
+            // código para valor1
+        break;
+        
+    case 7:
+        printf("o numero é igual a 7");
+            // código para valor2
+        break;
+        
+    default:
+        printf("o numero é diferente de 7 e 5");
+            // código para quando nenhum caso é verdadeiro
+}
+
+    
+
+    return 0;
+}

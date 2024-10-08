@@ -1,0 +1,56 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int numero;
+    
+    
+    numero = 7;
+    
+    for ( int i=0 ; i < 7 ; i++){
+        
+        
+        
+        if (i == 3 ) {
+            
+            continue;  // Pula a iteração quando i é igual a 5
+            
+        }
+        
+        if (i == 5) {
+            break;  // Sai do loop quando i é igual a 5
+        }
+        
+        
+        printf("Iteraçao %i\n",i);  
+        
+    }
+    
+    
+    int i=0;
+    
+    do {
+        
+        printf("Executando do-while: %d\n", i);
+        i++;
+        
+    } while (i < 1);
+    
+    
+        
+    while ( i < 5 ) {  // A condição é verificada primeiro
+        
+        printf("Executando while: %d\n", i);
+        
+        i++;
+    }
+    
+
+    printf("Fim do loop while.\n");
+
+    
+    
+
+    return 0;
+}
